@@ -1,0 +1,13 @@
+class: Availability
+
+table: availability
+
+# The fields (and columns if connected to the database) of the class. Supported
+# types are `bool`, `int`, `double`, `String`, `DateTime`, and any other
+# generated classes. You can also add lists of objects and types have support
+# for null safety. Eg. `List<int>?` or `List<MyOtherClass?>`.
+fields:
+  id_product: int ,parent=product
+  jour_semaine: int
+  heure_debut: DateTime
+  heure_fin: DateTime

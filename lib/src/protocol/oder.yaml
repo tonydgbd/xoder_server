@@ -1,0 +1,20 @@
+class: Order
+
+table: order
+
+# The fields (and columns if connected to the database) of the class. Supported
+# types are `bool`, `int`, `double`, `String`, `DateTime`, and any other
+# generated classes. You can also add lists of objects and types have support
+# for null safety. Eg. `List<int>?` or `List<MyOtherClass?>`.
+fields:
+  id_restaurant: int,parent=restaurant
+  id_table: int,parent=table
+  date_commande: DateTime
+  status: String
+  id_produit: int,parent=product
+  additional_details: String
+  # {
+  #   'notes for cook': "",
+  #   'option selected':"",
+  #   'add-on':""
+  # }

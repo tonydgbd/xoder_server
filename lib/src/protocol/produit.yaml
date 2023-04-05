@@ -1,0 +1,23 @@
+class: Product
+
+table: product
+
+# The fields (and columns if connected to the database) of the class. Supported
+# types are `bool`, `int`, `double`, `String`, `DateTime`, and any other
+# generated classes. You can also add lists of objects and types have support
+# for null safety. Eg. `List<int>?` or `List<MyOtherClass?>`.
+fields:
+  name : String
+  notes : String
+  restaurant_id: int ,parent=restaurant
+  description: String
+  categorie_id: int,parent:category
+  prix: String
+  option: String?
+  available: bool
+  picture: String
+  # {
+  #   'option name ' : price
+  # }
+
+
